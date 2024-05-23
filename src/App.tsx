@@ -1,10 +1,18 @@
 import React from 'react';
 import './App.css';
+import videoUrls from './vedioUrl';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
+    {
+      videoUrls.map((item)=>(
+        <>
+        <li>{item.username}</li>
+        <video src={item.url} />
+        </>
+      ))
+    }
     </div>
   );
 }

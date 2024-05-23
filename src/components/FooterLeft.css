@@ -1,0 +1,22 @@
+/* src/styles/FooterLeft.css */
+.ticker-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .ticker-content {
+    display: inline-block;
+    animation: ticker 10s linear infinite;
+  }
+  
+  @keyframes ticker {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
