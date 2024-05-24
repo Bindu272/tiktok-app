@@ -2,7 +2,7 @@ import React from 'react'
 import { LeftFooterProps } from '../types/videoTypes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMusic } from '@fortawesome/free-solid-svg-icons';
-import './FooterLeft.css'
+import '../styles/FooterLeft.css'
 
 const FooterLeft:React.FC<LeftFooterProps> = (props) => {
     const {username, description, song}=props;

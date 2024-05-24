@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { RightFooterProps } from '../types/videoTypes'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IconDefinition, faBookmark, faCircle, faCircleCheck, faCommentDots, faHeart, faShare } from '@fortawesome/free-solid-svg-icons'
-
+import '../styles/FooterRight.css'
 const FooterRight: React.FC<RightFooterProps> = (props) => {
     const { likes, comments, saves, shares, profilePic } = props
     const [liked, setLiked] = useState<boolean>(false)
